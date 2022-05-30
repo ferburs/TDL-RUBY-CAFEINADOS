@@ -1,0 +1,28 @@
+<div id="<%= dom_id usuario %>">
+  <p>
+    <strong>Nombre:</strong>
+    <%= usuario.nombre %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= usuario.email %>
+  </p>
+
+
+
+  <p>
+    <strong>Password:</strong>
+    <%= usuario.password %>
+  </p>
+
+  <p>
+    <strong>Entradas:</strong>
+    <%=  usuario.entradas.map do |item|%>
+    <%= item.funcion.pelicula.titulo %>
+    <%= item.funcion.fecha %>
+    <% end %>
+  </p>
+
+</div>
+
